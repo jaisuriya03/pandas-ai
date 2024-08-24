@@ -53,4 +53,6 @@ codes = [
 
 agent.train(queries, codes)
 
+print(response.json())
+
 print("Done")
