@@ -10,6 +10,10 @@ from pandasai.pipelines.chat.generate_chat_pipeline import GenerateChatPipeline
 from pandasai.schemas.df_config import Config
 from pandasai.vectorstores.vectorstore import VectorStore
 
+class AnotherAgent(BaseAgent):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+    
 
 class Agent(BaseAgent):
     def __init__(
